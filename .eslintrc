@@ -1,0 +1,46 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true,
+    "jest": true,
+    "es6": true
+  },
+  "plugins": [
+    "import",
+  ],
+  "rules": {
+    "space-before-function-paren": "off",
+    "linebreak-style": "off",
+    "global-require": "off",
+    "semi": "warn",
+    "arrow-body-style": "off",
+    "import/first": "off",
+    "import/no-unresolved": "off",
+    "no-multi-assign": 0,
+    "func-names": 0,
+    "no-empty": 0,
+    "no-underscore-dangle": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/extensions": 0,
+    "import/prefer-default-export": 0,
+    "no-param-reassign": 0,
+    "no-script-url": 0,
+    "no-console": 0,
+    "no-new": 0,
+    "quotes": 0,
+    "prefer-template": 0
+  }
+}

@@ -1,0 +1,32 @@
+*.iml
+
+.idea/
+.out/
+
+/dist/
+/build/
+
+# NodeJS modules folder
+node_modules
+
+# npm debug log
+npm-debug.log
+
+# vs code
+.vscode
+
+// docz
+.docz
+
+# coverage
+/coverage
+
+# lib
+/lib
+
+# env
+env.**
+
+/yarn-error.log
+
+/report.**
