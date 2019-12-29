@@ -1,4 +1,4 @@
-import { isValidPath, isInvalidPath } from './index';
+import { isValidPath, isInvalidPath } from '../index';
 
 describe('isInvalidPath', () => {
   it('should be invalid if the path is not a string', () => {

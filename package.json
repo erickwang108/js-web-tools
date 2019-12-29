@@ -1,6 +1,6 @@
 {
   "name": "js-web-tools",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Erick",
   "license": "MIT",
   "description": "Tools for Javascript develpers",
@@ -11,7 +11,7 @@
     "build": "npm run clean && babel src --out-dir lib --ignore src/**/*.test.js",
     "test": "cross-env NODE_ENV=test jest",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
-    "test:coverage": "cross-env NODE_ENV=test jest --coverage  --verbose",
+    "test:coverage": "rimraf coverage && cross-env NODE_ENV=test jest --coverage  --verbose",
     "lint": "eslint ./src"
   },
   "keywords": [
@@ -60,7 +60,11 @@
     "jest": "^24.5.0",
     "jest-config": "^24.9.0",
     "jest-extended": "^0.11.2",
+    "jsdom": "^15.2.1",
     "rimraf": "2.6.2",
     "shelljs": "^0.8.3"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1"
   }
 }
