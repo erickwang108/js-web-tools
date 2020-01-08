@@ -1,4 +1,4 @@
-import { isWindow as getWindow } from './_base';
+import { isWindow as getWindow } from '../utils/domUtils';
 import { getOffset } from './position';
 
 export function width(node, client) {

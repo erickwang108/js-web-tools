@@ -1,3 +1,5 @@
+import { isObject } from './commons';
+
 export function isDocument (element) {
   return 'nodeType' in element && element.nodeType === document.DOCUMENT_NODE;
 }
@@ -44,3 +46,6 @@ export function getComputedStyle(node, psuedoElement) {
   return ownerWindow(node).getComputedStyle(node, psuedoElement);
 }
 
+export function isDOMNode(obj) {
+  return isObject(obj) && obj.nodeType > 0;
+}

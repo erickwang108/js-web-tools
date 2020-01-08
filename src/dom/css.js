@@ -1,11 +1,23 @@
 import {
   isTransform,
   getComputedStyle,
-} from './_base';
+} from '../utils/domUtils';
 
 function hyphenate (s) {
   const str = s.replace(/([A-Z])/g, '-$1').toLowerCase();
   return str.replace(/^ms-/, '-ms-');
+}
+
+export function convertStyle(styleObj) {
+  let style = '';
+
+  for (var prop in styleObj) {
+    if (Object.prototype.hasOwnProperty.call(styleObj, prop)) {
+      style += (prop + ':' + styleObj[prop] + ';');
+    }
+  }
+
+  return style;
 }
 
 export function css(ele, prop) {

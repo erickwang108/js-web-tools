@@ -2,7 +2,7 @@ import {
   isWindow,
   isDocument,
   ownerDocument,
-} from './_base';
+} from '../utils/domUtils';
 import style from './css';
 import { height } from './size';
 import { contains } from './element';

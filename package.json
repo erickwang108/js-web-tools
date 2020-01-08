@@ -1,12 +1,13 @@
 {
   "name": "js-web-tools",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Erick",
   "license": "MIT",
   "description": "Tools for Javascript develpers",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
+    "copy": "nodemon --exec node ./internals/scripts/copy.js",
     "prepublishOnly": "node ./internals/scripts/build.js",
     "build": "npm run clean && babel src --out-dir lib --ignore src/**/*.test.js",
     "test": "cross-env NODE_ENV=test jest",

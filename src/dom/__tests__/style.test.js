@@ -1,4 +1,4 @@
-import { getComputedStyle } from '../_base';
+import { getComputedStyle } from '../../utils/domUtils';
 import { css } from '../css';
 
 describe('Style tests', () => {

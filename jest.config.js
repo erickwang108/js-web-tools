@@ -6,6 +6,7 @@ module.exports = {
     "src/**/*.js",
     "!src/index.js",
     "!src/**/_*.js",
+    "!src/utils/(domUtils).js",
     "!src/**/*.test.js"
   ],
   coverageThreshold: {
