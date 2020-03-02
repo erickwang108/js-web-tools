@@ -29,7 +29,7 @@ export function canUseDOM () {
 }
 
 export function ownerDocument (node) {
-  return (node && node.ownerDocument) || document;
+  return (node.ownerDocument) || document;
 }
 
 export function ownerWindow (node) {
