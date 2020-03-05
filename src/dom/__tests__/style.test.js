@@ -1,5 +1,5 @@
 import { getComputedStyle } from '../../utils/domUtils';
-import { css } from '../css';
+import { css, convertStyle } from '../css';
 
 describe('Style tests', () => {
   beforeEach(() => {
@@ -22,6 +22,15 @@ describe('Style tests', () => {
   });
   afterEach(() => {
     document.body.innerHTML = '';
+  });
+
+  it('convertStyle', () => {
+    const styles = convertStyle({
+      width: '100%',
+      height: '100%',
+      color: '#aabbcc',
+    });
+    expect(styles).toEqual('width:100%;height:100%;color:#aabbcc;');
   });
 
   it('should get computed style', () => {

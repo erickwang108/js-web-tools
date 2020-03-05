@@ -1,4 +1,4 @@
-export function hasClass (ele, className) {
+export function hasClass(ele, className) {
   /* istanbul ignore else */
   if (ele.classList) {
     return !!className && ele.classList.contains(className);
@@ -11,7 +11,7 @@ export function hasClass (ele, className) {
   );
 }
 
-export function addClass (element, className) {
+export function addClass(element, className) {
   /* istanbul ignore else */
   if (element.classList) {
     element.classList.add(className);
@@ -31,14 +31,14 @@ export function addClass (element, className) {
   }
 }
 
-function replaceClassName (origClass, classToRemove) {
+function replaceClassName(origClass, classToRemove) {
   return origClass
     .replace(new RegExp(`(^|\\s)${classToRemove}(?:\\s|$)`, 'g'), '$1')
     .replace(/\s+/g, ' ')
     .replace(/^\s*|\s*$/g, '');
 }
 
-export function removeClass (element, className) {
+export function removeClass(element, className) {
   if (element.classList) {
     element.classList.remove(className);
   } else if (typeof element.className === 'string') {
@@ -54,7 +54,7 @@ export function removeClass (element, className) {
   }
 }
 
-export function toggleClass (element, className) {
+export function toggleClass(element, className) {
   if (element.classList) {
     element.classList.toggle(className);
   } else if (hasClass(element, className)) {

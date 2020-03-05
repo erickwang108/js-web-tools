@@ -1,7 +1,7 @@
 import { ownerDocument } from '../utils/domUtils';
 
 let matchesImpl = null;
-function matches (node, selector) {
+function matches(node, selector) {
   if (!matchesImpl) {
     const body = document.body;
     /* istanbul ignore next */
@@ -18,7 +18,7 @@ function matches (node, selector) {
   return matchesImpl(node, selector);
 }
 
-export function closest (node, selector, stopAt) {
+export function closest(node, selector, stopAt) {
   if (node.closest && !stopAt) {
     return node.closest(selector);
   }
@@ -39,7 +39,7 @@ export function closest (node, selector, stopAt) {
   return null;
 }
 
-export function contains (context, node) {
+export function contains(context, node) {
   /* istanbul ignore else */
   if (context.contains) {
     return context.contains(node);
@@ -51,7 +51,7 @@ export function contains (context, node) {
   }
 }
 
-export function getActiveElement (doc = ownerDocument()) {
+export function getActiveElement(doc = ownerDocument()) {
   try {
     const active = doc.activeElement;
     /* istanbul ignore else */
@@ -67,6 +67,6 @@ export function getActiveElement (doc = ownerDocument()) {
 }
 
 const toArray = Function.prototype.bind.call(Function.prototype.call, [].slice);
-export function querySelectorAll (element, selector) {
+export function querySelectorAll(element, selector) {
   return toArray(element.querySelectorAll(selector));
 }

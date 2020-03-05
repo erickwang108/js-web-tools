@@ -12,6 +12,7 @@ export function convertStyle(styleObj) {
   let style = '';
 
   for (var prop in styleObj) {
+    /* istanbul ignore else */
     if (Object.prototype.hasOwnProperty.call(styleObj, prop)) {
       style += (prop + ':' + styleObj[prop] + ';');
     }
