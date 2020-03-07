@@ -1,4 +1,4 @@
-import { isObject } from './commons';
+import { isObject } from './utils';
 
 export function isDocument(element) {
   return 'nodeType' in element && element.nodeType === document.DOCUMENT_NODE;

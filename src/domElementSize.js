@@ -1,5 +1,5 @@
-import { isWindow as getWindow } from '../utils/domUtils';
-import { getOffset } from './position';
+import { isWindow as getWindow } from './domUtils';
+import { getOffset } from './domElementPosition';
 
 export function width(node, client) {
   const win = getWindow(node);

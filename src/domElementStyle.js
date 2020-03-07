@@ -1,9 +1,9 @@
 import {
   isTransform,
   getComputedStyle,
-} from '../utils/domUtils';
+} from './domUtils';
 
-function hyphenate (s) {
+function hyphenate(s) {
   const str = s.replace(/([A-Z])/g, '-$1').toLowerCase();
   return str.replace(/^ms-/, '-ms-');
 }
@@ -21,7 +21,7 @@ export function convertStyle(styleObj) {
   return style;
 }
 
-export function css(ele, prop) {
+export function domStyle(ele, prop) {
   /* istanbul ignore else */
   if (typeof prop === 'string') {
     return (
@@ -62,4 +62,4 @@ export function css(ele, prop) {
   }
 }
 
-export default css;
+export default domStyle;

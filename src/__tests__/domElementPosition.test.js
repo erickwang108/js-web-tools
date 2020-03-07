@@ -4,8 +4,8 @@ import {
   offsetParent,
   scrollPrarent,
   position,
-} from '../position';
-import { css } from '../css';
+} from '../domElementPosition';
+import css from '../domElementStyle';
 
 function createMockElement(width, height, top = 0, left = 0) {
   const newEle = document.createElement("div");

@@ -1,12 +1,12 @@
+import { toNumber } from './utils';
+import style from './domElementStyle';
+import { contains } from './domElement';
+import { height } from './domElementSize';
 import {
   isWindow,
   isDocument,
   ownerDocument,
-} from '../utils/domUtils';
-import style from './css';
-import { height } from './size';
-import { contains } from './element';
-import { toNumber } from '../utils/stringUtils';
+} from './domUtils';
 
 function isHTML(node) {
   return node && node.nodeName && node.nodeName.toLowerCase() === 'html';

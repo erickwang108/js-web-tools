@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 
-import { isString } from '../utils/stringUtils';
+import { isString } from './utils';
 
 export const AUTH_SCHEMA = 'Bearer';
 

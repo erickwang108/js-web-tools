@@ -1,4 +1,4 @@
-import { width, height } from '../size';
+import { width, height } from '../domElementSize';
 
 function createMockElement(width, height, top = 0, left = 0) {
   const newEle = document.createElement("div");

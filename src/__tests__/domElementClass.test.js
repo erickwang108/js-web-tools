@@ -3,7 +3,7 @@ import {
   hasClass,
   removeClass,
   toggleClass,
-} from '../elementClass';
+} from '../domElementClass';
 
 
 function defineProperty(element, propName, value) {

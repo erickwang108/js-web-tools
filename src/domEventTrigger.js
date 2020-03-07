@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 const eventTypes = {
   load:        'HTMLEvents',
   unload:      'HTMLEvents',

@@ -1,5 +1,5 @@
-import { getComputedStyle } from '../../utils/domUtils';
-import { css, convertStyle } from '../css';
+import { getComputedStyle } from '../domUtils';
+import css, { convertStyle } from '../domElementStyle';
 
 describe('Style tests', () => {
   beforeEach(() => {

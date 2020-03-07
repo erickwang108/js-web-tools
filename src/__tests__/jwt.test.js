@@ -2,7 +2,7 @@ import {
   JWT,
   AUTH_SCHEMA,
   JWT_REGEX,
-} from './';
+} from '../jwt';
 
 describe('jwt', () => {
   it('should get a token using default config', () => {

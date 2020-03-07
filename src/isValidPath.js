@@ -1,6 +1,6 @@
 import path from 'path';
 
-import isWindows from './_isWindows';
+import { isWindows } from './utils';
 
 export function isInvalidPath (fp, options = {}) {
   /* istanbul ignore else */

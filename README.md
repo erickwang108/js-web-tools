@@ -41,7 +41,7 @@ invalid paths:
 # 2. DOM
 #### 2.1 css(node, propertyName)
 ```
-  import css from 'js-web-tools/lib/dom/css';
+  import css from 'js-web-tools/lib/domElementStyle';
 ```
 Get the value of a computed style property for the first element in the set of matched elements or set one or more CSS properties for every matched element.
 
@@ -55,7 +55,7 @@ Get the value of a computed style property for the first element in the set of m
     contains,
     getActiveElement,
     querySelectorAll,
-  } from 'js-web-tools/lib/dom/element';
+  } from 'js-web-tools/lib/domElement';
 ```
 ##### closest(node, selector)
 * `node`: DOM element
@@ -108,7 +108,7 @@ Add or remove one or more classes from each element in the set of matched elemen
 
 #### 2.4 event
 ```
-  import Events from 'js-web-tools/lib/dom/event';
+  import Events from 'js-web-tools/lib/domEvent';
 ```
 ##### Events.on(el, eventType, callback)
 Register a callback.
@@ -163,7 +163,7 @@ Dispatch an event with props to el.
     getOffset,
     scrollPrarent,
     position,
-  } from 'js-web-tools/lib/dom/position';
+  } from 'js-web-tools/lib/domElementPosition';
 ```
 ##### scrollLeft(el)
 Get the current horizontal position of the scroll bar for the element.
@@ -245,6 +245,22 @@ encoded private key for RSA and ECDSA. In case of a private key with passphrase 
 
 Verify first and if token is valid, then get object or value with specify key.
 
+# 4. balancer
+An util to balance number list.
+
+```
+  import balancer from 'js-web-tools/lib/balancer';
+  
+  const result = balancer([10, 30, 20, 30]);
+  expect(result).toMatchObject([11.11, 33.34, 22.22, 33.33]);
+  ...
+```
+#### Usage 
+`balancer(list, goal, places)`
+
+* `list`: number array list
+* `goal`: target goal you want. (default: 100)
+* `places`: number fixed. (default: 2)
 
 # TODO
 

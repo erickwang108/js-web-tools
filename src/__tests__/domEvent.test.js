@@ -1,5 +1,5 @@
-import Events from '../event';
-import triggerEvent from '../_eventTrigger';
+import Events from '../domEvent';
+import triggerEvent from '../domEventTrigger';
 
 function injectHtml () {
   document.body.innerHTML = `

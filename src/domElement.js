@@ -1,4 +1,4 @@
-import { ownerDocument } from '../utils/domUtils';
+import { ownerDocument } from './domUtils';
 
 let matchesImpl = null;
 function matches(node, selector) {

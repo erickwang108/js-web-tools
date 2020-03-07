@@ -1,4 +1,4 @@
-import eventTrigger from '../_eventTrigger';
+import eventTrigger from '../domEventTrigger';
 
 function triggerAndCatch(element, event, options, fn){
   // If no options are specified, assume the last param is the callback

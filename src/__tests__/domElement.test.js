@@ -3,8 +3,8 @@ import {
   contains,
   getActiveElement,
   querySelectorAll,
-} from '../element';
-import { hasClass } from '../elementClass';
+} from '../domElement';
+import { hasClass } from '../domElementClass';
 
 describe('Closest tests', () => {
   beforeEach(() => {

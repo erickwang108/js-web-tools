@@ -1,1 +1,1 @@
-export { default as isValidPath } from './isValidPath';
+index.js
