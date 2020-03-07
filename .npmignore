@@ -23,4 +23,3 @@ CHANGELOG.md
 .gitignore
 babel.config.js
 jest.config.js
-test-bundler.js
